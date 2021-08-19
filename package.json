@@ -1,0 +1,38 @@
+{
+  "name": "obsidian-reloader-rollup",
+  "version": "0.1.4",
+  "description": "A Rollup Plugin to enable auto-reloading during Obsidian Plugin development",
+  "type": "module",
+  "main": "./build/index.js",
+  "files": [
+    "build/"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "release": "npx tagger"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metruzanca/obsidian-reloader-rollup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/metruzanca/obsidian-reloader-rollup/issues"
+  },
+  "homepage": "https://github.com/metruzanca/obsidian-reloader-rollup#readme",
+  "keywords": [
+    "obsidian",
+    "obsidian-md",
+    "obsidian-plugin",
+    "rollup-plugin",
+    "rollup"
+  ],
+  "author": "Samuele Zanca",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^7.4.7",
+    "gh-tagger": "^0.2.4"
+  }
+}
